@@ -1,0 +1,26 @@
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\bin\Debug\netcoreapp3.1\rabbitmq-message.deps.json
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\bin\Debug\netcoreapp3.1\rabbitmq-message.dll
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\bin\Debug\netcoreapp3.1\rabbitmq-message.pdb
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.csproj.CoreCompileInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.AssemblyInfoInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.AssemblyInfo.cs
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.dll
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.pdb
+E:\Chandra Prakash\Youtube Saga\localsysnuget\netcoreapp3.1\rabbitmq-message.deps.json
+E:\Chandra Prakash\Youtube Saga\localsysnuget\netcoreapp3.1\rabbitmq-message.dll
+E:\Chandra Prakash\Youtube Saga\localsysnuget\netcoreapp3.1\rabbitmq-message.pdb
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.csproj.CoreCompileInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.AssemblyInfoInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.AssemblyInfo.cs
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.dll
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.pdb
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\rabbitmq-message.deps.json
+C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\rabbitmq-message.dll
+C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\rabbitmq-message.pdb
+C:\Users\andre\Desktop\sa cancel\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\sa cancel\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\sa cancel\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.AssemblyInfoInputs.cache
+C:\Users\andre\Desktop\sa cancel\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.AssemblyInfo.cs
+C:\Users\andre\Desktop\sa cancel\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.dll
+C:\Users\andre\Desktop\sa cancel\rabbitmq\rabbitmq-message\obj\Debug\netcoreapp3.1\rabbitmq-message.pdb

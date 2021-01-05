@@ -1,0 +1,9 @@
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\bin\Debug\netcoreapp3.1\rabbitmq.deps.json
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\bin\Debug\netcoreapp3.1\rabbitmq.dll
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\bin\Debug\netcoreapp3.1\rabbitmq.pdb
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\obj\Debug\netcoreapp3.1\rabbitmq.csprojAssemblyReference.cache
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\obj\Debug\netcoreapp3.1\rabbitmq.csproj.CoreCompileInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\obj\Debug\netcoreapp3.1\rabbitmq.AssemblyInfoInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\obj\Debug\netcoreapp3.1\rabbitmq.AssemblyInfo.cs
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\obj\Debug\netcoreapp3.1\rabbitmq.dll
+E:\Chandra Prakash\Youtube Saga\Code\rabbitmq\obj\Debug\netcoreapp3.1\rabbitmq.pdb

@@ -1,0 +1,151 @@
+version: '3.4'
+
+services:
+  aviomicroservice:
+    image: aviomicroservice:dev
+    container_name: AvioMicroservice
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "AvioMicroservice"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+    volumes:
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\AvioMicroservice:/app
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20:/src
+      - C:\Users\andre\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\andre\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  \"/src/../../PROJECT/MAANPP20/AvioMicroservice/bin/Debug/netcoreapp3.1/AvioMicroservice.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  carmicroservice:
+    image: carmicroservice:dev
+    container_name: CarMicroservice
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "CarMicroservice"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+    volumes:
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\CarMicroservice:/app
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20:/src
+      - C:\Users\andre\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\andre\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  \"/src/../../PROJECT/MAANPP20/CarMicroservice/bin/Debug/netcoreapp3.1/CarMicroservice.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  hotelmicroservice:
+    image: hotelmicroservice:dev
+    container_name: HotelMicroservice
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "HotelMicroservice"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+    volumes:
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\HotelMicroservice:/app
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20:/src
+      - C:\Users\andre\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\andre\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  paymentmicroservice:
+    image: paymentmicroservice:dev
+    container_name: PaymentMicroservice
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "PaymentMicroservice"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+    volumes:
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\PaymentMicroservice:/app
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20:/src
+      - C:\Users\andre\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\andre\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  usermicroservice:
+    image: usermicroservice:dev
+    container_name: UserMicroservice
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "UserMicroservice"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+    volumes:
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\UserMicroservice:/app
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20:/src
+      - C:\Users\andre\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\andre\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  \"/src/../../PROJECT/MAANPP20/UserMicroservice/bin/Debug/netcoreapp3.1/UserMicroservice.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

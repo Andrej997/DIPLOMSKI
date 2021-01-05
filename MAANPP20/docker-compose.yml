@@ -1,0 +1,43 @@
+version: '3.4'
+services: 
+  ms-sql-server:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    environment: 
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Password1!"
+      MSSQL_PID: Express
+    ports: 
+      - "1433:1433"
+  aviomicroservice:
+    image: ${DOCKER_REGISTRY-}aviomicroservice
+    build:
+      context: .
+      dockerfile: AvioMicroservice/Dockerfile
+
+  carmicroservice:
+    image: ${DOCKER_REGISTRY-}carmicroservice
+    build:
+      context: .
+      dockerfile: CarMicroservice/Dockerfile
+
+
+  usermicroservice:
+    image: ${DOCKER_REGISTRY-}usermicroservice
+    build:
+      context: .
+      dockerfile: UserMicroservice/Dockerfile
+
+
+  hotelmicroservice:
+    image: ${DOCKER_REGISTRY-}hotelmicroservice
+    build:
+      context: .
+      dockerfile: HotelMicroservice/Dockerfile
+
+
+  paymentmicroservice:
+    image: ${DOCKER_REGISTRY-}paymentmicroservice
+    build:
+      context: .
+      dockerfile: PaymentMicroservice/Dockerfile
+

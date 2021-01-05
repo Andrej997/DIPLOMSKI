@@ -1,0 +1,14 @@
+* Kreiranje migracije
+	dotnet ef migrations add nazivMigracije
+
+* Kreiranje slike za bazu 
+	docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Password1!' -e 'MSSQL_PID=Express' -p 1433:1433 -d 		mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+
+* Kreiranje docker slike od programa
+	docker build -t nazivSlike -f Dockerfile ..
+
+* Pokretanje docker slike 
+	docker run -p 8080:80 nazivSlike
+
+* Kreiranje docker-compose
+	docker-compose up

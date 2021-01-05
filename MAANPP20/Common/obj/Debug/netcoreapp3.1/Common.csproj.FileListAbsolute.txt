@@ -1,0 +1,27 @@
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.dll
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.pdb
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.dll
+D:\FAX\8.SEMESTAR\PROJECT\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.pdb
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.dll
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.pdb
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.dll
+D:\FAX\8.SEMESTAR\PROJECT - Copy\MAANPP20\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\Common\obj\Debug\netcoreapp3.1\Common.pdb

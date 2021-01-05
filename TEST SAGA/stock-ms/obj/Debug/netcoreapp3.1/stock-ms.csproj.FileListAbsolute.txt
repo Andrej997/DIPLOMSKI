@@ -1,0 +1,102 @@
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.exe
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Automatonymous.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\GreenPipes.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.AspNetCoreIntegration.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\NewId.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.AssemblyInfoInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.AssemblyInfo.cs
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.RazorTargetAssemblyInfo.cache
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.csproj.CopyComplete
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\staticwebassets\stock-ms.StaticWebAssets.Manifest.cache
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\staticwebassets\stock-ms.StaticWebAssets.xml
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.deps.json
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.runtimeconfig.json
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.runtimeconfig.dev.json
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.pdb
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.pdb
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.genruntimeconfig.cache
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\rabbitmq-message.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.csprojAssemblyReference.cache
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.EntityFrameworkCoreIntegration.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\bin\Debug\netcoreapp3.1\rabbitmq-saga.dll
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.csproj.CoreCompileInputs.cache
+E:\Chandra Prakash\Youtube Saga\Code\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.exe
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.deps.json
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.runtimeconfig.json
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.runtimeconfig.dev.json
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\stock-ms.pdb
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Automatonymous.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\GreenPipes.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.AspNetCoreIntegration.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.EntityFrameworkCoreIntegration.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\NewId.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\rabbitmq-message.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\rabbitmq-saga.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.AssemblyInfoInputs.cache
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.AssemblyInfo.cs
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.RazorTargetAssemblyInfo.cache
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.csproj.CopyComplete
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\staticwebassets\stock-ms.StaticWebAssets.Manifest.cache
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\staticwebassets\stock-ms.StaticWebAssets.xml
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.dll
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.pdb
+C:\Users\andre\Desktop\sa cancel\stock-ms\obj\Debug\netcoreapp3.1\stock-ms.genruntimeconfig.cache
