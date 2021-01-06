@@ -26,11 +26,11 @@ namespace CarMicroservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var server = Configuration["DBServer"] ?? "ms-sql-server";
-            var port = Configuration["DBPort"] ?? "1433";
-            var user = Configuration["DBUser"] ?? "SA";
-            var password = Configuration["DBPassword"] ?? "Password1!";
-            var database = Configuration["Database"] ?? "maanpp20c";
+            //var server = Configuration["DBServer"] ?? "ms-sql-server";
+            //var port = Configuration["DBPort"] ?? "1433";
+            //var user = Configuration["DBUser"] ?? "SA";
+            //var password = Configuration["DBPassword"] ?? "Password1!";
+            //var database = Configuration["Database"] ?? "maanpp20c";
 
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
 
@@ -38,9 +38,11 @@ namespace CarMicroservice
 
             services.AddControllers();
 
-            services.AddDbContext<MAANPP20ContextCar>(options =>
-                options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));
+            //services.AddDbContext<MAANPP20ContextCar>(options =>
+            //    options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));
 
+            services.AddDbContext<MAANPP20ContextCar>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MAANPP20Context")));
 
             services.AddCors();
             //Jwt Authentication

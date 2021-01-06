@@ -4,14 +4,16 @@ using CarMicroservice.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CarMicroservice.Migrations
 {
     [DbContext(typeof(MAANPP20ContextCar))]
-    partial class MAANPP20ContextCarModelSnapshot : ModelSnapshot
+    [Migration("20210106185649_newTable")]
+    partial class newTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

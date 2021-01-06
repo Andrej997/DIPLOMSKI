@@ -10,6 +10,8 @@ namespace CarMicroservice.Data
         public MAANPP20ContextCar(DbContextOptions<MAANPP20ContextCar> options) 
             : base(options) { }
 
+        public DbSet<Automobile> Automobiles { get; set; }
+
         #region Common
         public DbSet<Address> Addresses { get; set; }
         public DbSet<User> Users { get; set; }
