@@ -6886,11 +6886,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\saga-machine\\saga-machine.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\saga-machine\\saga-machine.csproj",
       "projectName": "saga-machine",
-      "projectPath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\saga-machine\\saga-machine.csproj",
+      "projectPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\saga-machine\\saga-machine.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\saga-machine\\obj\\",
+      "outputPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\saga-machine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6912,11 +6912,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj": {
-              "projectPath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj"
+            "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj": {
+              "projectPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj"
             },
-            "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj": {
-              "projectPath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj"
+            "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj": {
+              "projectPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj"
             }
           }
         }

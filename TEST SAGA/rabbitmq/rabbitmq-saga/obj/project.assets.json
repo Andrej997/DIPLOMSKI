@@ -6193,11 +6193,11 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj",
       "projectName": "rabbitmq-saga",
-      "projectPath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj",
+      "projectPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-saga\\obj\\",
+      "outputPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-saga\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6219,8 +6219,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj": {
-              "projectPath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj"
+            "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj": {
+              "projectPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj"
             }
           }
         }

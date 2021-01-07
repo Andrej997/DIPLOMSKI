@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HueeX+zdCqmbvR3E1OMwrV16kr8MPUjiBnXfWm5zAJFx+TubiyfcmkAJUcPjbAxu0dqY6IWWS302rJ/pW6tPtQ==",
+  "dgSpecHash": "3O25bbTCFd2o3YBf0LWKv2DpSz+8qmBdsaaBAVlwSBUHEOVYswBirrpdq41AidbvszXpKzdNc1bxB94V+vV4wQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-message\\rabbitmq-message.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\automatonymous\\4.2.1\\automatonymous.4.2.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\greenpipes\\3.0.1\\greenpipes.3.0.1.nupkg.sha512",

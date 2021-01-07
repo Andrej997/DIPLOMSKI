@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nWvg16uf+yHLS92KqWnHQ2EN4dWCwQ+nykifTeXlQusIFkA/N+n2fdQqfGqdZqSLsLbCLYDqo6Xo/1WgHshwVg==",
+  "dgSpecHash": "XAlgxkV6TOQ0qSHp2Ko6W/4J5gtAehsmoZAJ795fyEqMJ7Yiy5fR/KZvnVR/GpTZRbZjd+BuHrsSPawJNhpu6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\Desktop\\sa cancel\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\TEST SAGA\\rabbitmq\\rabbitmq-saga\\rabbitmq-saga.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\automatonymous\\4.2.1\\automatonymous.4.2.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\greenpipes\\3.0.1\\greenpipes.3.0.1.nupkg.sha512",
@@ -133,7 +133,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\system.xml.readerwriter\\4.3.1\\system.xml.readerwriter.4.3.1.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\rabbitmq-message\\1.0.9\\rabbitmq-message.1.0.9.nupkg.sha512"
   ],
   "logs": []
 }
