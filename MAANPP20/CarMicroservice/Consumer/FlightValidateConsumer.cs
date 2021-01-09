@@ -27,7 +27,15 @@ namespace CarMicroservice.Consumer
             }
             else
             {
-                // send to next microservice
+                await context.Publish<ICarStartedEvent>(
+                    new
+                    {
+                        context.Message.FlightId,
+                        context.Message.UserId,
+                        context.Message.CarId,
+                        context.Message.HotelId,
+                        context.Message.PaymentId
+                    });
             }
 
         }

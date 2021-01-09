@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Common.Models.Common_U;
+using HotelMicroservice.Consumer;
 using HotelMicroservice.Data;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,6 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using RabbitMQMEssage.BusConfiguration;
 
 namespace HotelMicroservice
 {
@@ -31,6 +34,16 @@ namespace HotelMicroservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMassTransit(cfg =>
+            {
+                cfg.AddConsumer<CarValidateConsumer>();
+
+                cfg.AddBus(provider => RabbitMqBus.ConfigureBus(provider, (cfg, host) =>
+                {
+                }));
+            });
+            services.AddMassTransitHostedService();
+
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

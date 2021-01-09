@@ -35,7 +35,7 @@ namespace AvioMicroservice.Controllers
             {
                 UserId = Guid.NewGuid().ToString(),
                 FlightId = Guid.NewGuid().ToString(),
-                CarId = 0,
+                CarId = 1,
                 HotelId = 1,
                 PaymentId = 1
             });

@@ -1354,7 +1354,7 @@
           "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
       },
-      "RabbitMQMEssage/1.0.1": {
+      "RabbitMQMEssage/2.0.0": {
         "type": "package",
         "dependencies": {
           "MassTransit": "6.2.5",
@@ -1368,12 +1368,12 @@
           "lib/netcoreapp3.1/RabbitMQMEssage.dll": {}
         }
       },
-      "RabbitMQSaga/1.0.2": {
+      "RabbitMQSaga/2.0.0": {
         "type": "package",
         "dependencies": {
           "MassTransit": "6.2.5",
           "MassTransit.EntityFrameworkCore": "6.2.5",
-          "RabbitMQMEssage": "1.0.1"
+          "RabbitMQMEssage": "2.0.0"
         },
         "compile": {
           "lib/netcoreapp3.1/RabbitMQSaga.dll": {}
@@ -5076,25 +5076,25 @@
         "rabbitmq.client.nuspec"
       ]
     },
-    "RabbitMQMEssage/1.0.1": {
-      "sha512": "z/LkS4H4QyzC8Asx7HAN+wOvEZLSz8+8iVxl6lGuhll348yiSgmBZqJd5aq0rG8IXwqOyLFB+x+R/49ReGEO/Q==",
+    "RabbitMQMEssage/2.0.0": {
+      "sha512": "rQorQhQcHb2T2Cy+JKVFqsITJGQVz2tzPLkzagqQVdNxbEBzrUSIQFZTq1oOlh8a2wc9Rq+rCIdFea0CMBoTlw==",
       "type": "package",
-      "path": "rabbitmqmessage/1.0.1",
+      "path": "rabbitmqmessage/2.0.0",
       "files": [
         ".nupkg.metadata",
         "lib/netcoreapp3.1/RabbitMQMEssage.dll",
-        "rabbitmqmessage.1.0.1.nupkg.sha512",
+        "rabbitmqmessage.2.0.0.nupkg.sha512",
         "rabbitmqmessage.nuspec"
       ]
     },
-    "RabbitMQSaga/1.0.2": {
-      "sha512": "fkENbVJgU3GC7GvD56A10IlunX5Y0102k50g53Yl+TUn7VDczK0f4t3dFaWGcidLrN+zedWinRIj9ISXQmDRSg==",
+    "RabbitMQSaga/2.0.0": {
+      "sha512": "pPq31gIPn+aloqorM/Cb2SbxUhGFl0aDkM5F+smE1YD0mOrQAZvTSkWLqGOvWD+8zkFwahjRMdkVzQs7bRx/ag==",
       "type": "package",
-      "path": "rabbitmqsaga/1.0.2",
+      "path": "rabbitmqsaga/2.0.0",
       "files": [
         ".nupkg.metadata",
         "lib/netcoreapp3.1/RabbitMQSaga.dll",
-        "rabbitmqsaga.1.0.2.nupkg.sha512",
+        "rabbitmqsaga.2.0.0.nupkg.sha512",
         "rabbitmqsaga.nuspec"
       ]
     },
@@ -9643,8 +9643,8 @@
       "Microsoft.IdentityModel.Tokens >= 6.5.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
-      "RabbitMQMEssage >= 1.0.1",
-      "RabbitMQSaga >= 1.0.2",
+      "RabbitMQMEssage >= 2.0.0",
+      "RabbitMQSaga >= 2.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.5.1"
     ]
   },
@@ -9745,11 +9745,11 @@
           },
           "RabbitMQMEssage": {
             "target": "Package",
-            "version": "[1.0.1, )"
+            "version": "[2.0.0, )"
           },
           "RabbitMQSaga": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[2.0.0, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
