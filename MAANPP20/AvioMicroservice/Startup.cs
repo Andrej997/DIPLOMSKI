@@ -11,6 +11,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using MassTransit.Definition;
+using MassTransit;
+using RabbitMQMEssage;
+using AvioMicroservice.Consumer;
+using RabbitMQMEssage.BusConfiguration;
 
 namespace AvioMicroservice
 {
@@ -26,6 +32,19 @@ namespace AvioMicroservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.TryAddSingleton(KebabCaseEndpointNameFormatter.Instance);
+            services.AddMassTransit(cfg =>
+            {
+                cfg.AddRequestClient<IStartFlight>();
+
+                cfg.AddConsumer<StartFlightConsumer>();
+                cfg.AddConsumer<FlightCancelledConsumer>();
+
+                cfg.AddBus(provider => RabbitMqBus.ConfigureBus(provider));
+            });
+
+            services.AddMassTransitHostedService();
+
             var server = Configuration["DBServer"] ?? "ms-sql-server";
             var port = Configuration["DBPort"] ?? "1433";
             var user = Configuration["DBUser"] ?? "SA";
@@ -38,8 +57,11 @@ namespace AvioMicroservice
 
             services.AddControllers();
 
+            //services.AddDbContext<MAANPP20ContextFlight>(options =>
+            //    options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));
+
             services.AddDbContext<MAANPP20ContextFlight>(options =>
-                options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));
+                options.UseSqlServer(Configuration.GetConnectionString("MAANPP20Context")));
 
             services.AddCors();
             //Jwt Authentication

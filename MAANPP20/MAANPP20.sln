@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarMicroservice", "CarMicro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMicroservice", "UserMicroservice\UserMicroservice.csproj", "{33398A9F-6B02-4F6C-B8B7-4F8C39F3D0D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelMicroservice", "HotelMicroservice\HotelMicroservice.csproj", "{590C746B-A519-4A66-838C-B6B25EA17FAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelMicroservice", "HotelMicroservice\HotelMicroservice.csproj", "{590C746B-A519-4A66-838C-B6B25EA17FAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentMicroservice", "PaymentMicroservice\PaymentMicroservice.csproj", "{9DFA0A6A-AC6F-4869-B3F7-A03AAAA7F96D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentMicroservice", "PaymentMicroservice\PaymentMicroservice.csproj", "{9DFA0A6A-AC6F-4869-B3F7-A03AAAA7F96D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SagaMachine", "SagaMachine\SagaMachine.csproj", "{7267FFC4-B1F3-447B-883E-C55FCEFDA77D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SagaMachine", "SagaMachine\SagaMachine.csproj", "{7267FFC4-B1F3-447B-883E-C55FCEFDA77D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQSaga", "..\RabbitMQSaga\RabbitMQSaga.csproj", "{300CF7BC-6747-44F9-9807-203D01C9252D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQSaga", "..\RabbitMQSaga\RabbitMQSaga.csproj", "{300CF7BC-6747-44F9-9807-203D01C9252D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQMEssage", "..\RabbitMQMEssage\RabbitMQMEssage.csproj", "{1AA21386-4274-4DC2-9ACF-37D4BC493BCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{300CF7BC-6747-44F9-9807-203D01C9252D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300CF7BC-6747-44F9-9807-203D01C9252D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{300CF7BC-6747-44F9-9807-203D01C9252D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA21386-4274-4DC2-9ACF-37D4BC493BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA21386-4274-4DC2-9ACF-37D4BC493BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA21386-4274-4DC2-9ACF-37D4BC493BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA21386-4274-4DC2-9ACF-37D4BC493BCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

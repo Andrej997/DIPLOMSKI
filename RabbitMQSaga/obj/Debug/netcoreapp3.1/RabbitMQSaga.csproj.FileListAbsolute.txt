@@ -1,0 +1,5 @@
+C:\Users\andre\Desktop\DIPLOMSKI\RabbitMQSaga\bin\Debug\netcoreapp3.1\RabbitMQSaga.deps.json
+C:\Users\andre\Desktop\DIPLOMSKI\RabbitMQSaga\bin\Debug\netcoreapp3.1\RabbitMQSaga.dll
+C:\Users\andre\Desktop\DIPLOMSKI\RabbitMQSaga\bin\Debug\netcoreapp3.1\RabbitMQSaga.pdb
+C:\Users\andre\Desktop\DIPLOMSKI\RabbitMQSaga\bin\Debug\netcoreapp3.1\RabbitMQMEssage.dll
+C:\Users\andre\Desktop\DIPLOMSKI\RabbitMQSaga\bin\Debug\netcoreapp3.1\RabbitMQMEssage.pdb

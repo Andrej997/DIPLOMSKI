@@ -291,10 +291,10 @@ namespace UserMicroservice.Controllers
 
         // GET: api/MyUser/1s231-12sf23...
         [HttpGet("{id}")]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<User>> GetUser(string id)
         {
-            string userId = User.Claims.First(c => c.Type == "UserID").Value;
+            //string userId = User.Claims.First(c => c.Type == "UserID").Value;
 
             var user = await _context.Users
                 .Include(address => address.address)

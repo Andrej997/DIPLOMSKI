@@ -64,6 +64,11 @@ services:
     volumes:
     - C:\Users\andre\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\andre\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  sagamachine:
+    build:
+      context: C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20
+      dockerfile: SagaMachine/Dockerfile
+    image: sagamachine
   usermicroservice:
     build:
       context: C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20

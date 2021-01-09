@@ -112,6 +112,28 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
 
+  sagamachine:
+    image: sagamachine:dev
+    container_name: SagaMachine
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "SagaMachine"
+    #environment:
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_sagamachine$
+    volumes:
+      - C:\Users\andre\Desktop\DIPLOMSKI\MAANPP20\SagaMachine:/app
+      - C:\Users\andre\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_sagamachine$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_sagamachine$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
   usermicroservice:
     image: usermicroservice:dev
     container_name: UserMicroservice

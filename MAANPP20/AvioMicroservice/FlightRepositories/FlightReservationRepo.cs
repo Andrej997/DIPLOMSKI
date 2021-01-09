@@ -11,11 +11,80 @@ using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
+using System.Net.Http;
+using Microsoft.Data.SqlClient;
 
 namespace AvioMicroservice.FlightRepositories
 {
     public class FlightReservationRepo : IFlightReservation
     {
+        public async Task<ActionResult<FlightReservation>> SagaReservation(MAANPP20ContextFlight _context, FlightReservation flightReservation)
+        {
+            AvioSediste avioSediste = await _context.AvioSedista
+                .Where(x => x.deleted == false)
+                .FirstOrDefaultAsync(id => id.id == flightReservation.seatId);
+            if (avioSediste == null) return null;
+            if (avioSediste.isFastReservation == true) return null;
+            if (avioSediste.deleted == true) return null;
+            if (avioSediste.reserved == true) return null;
+            avioSediste.reserved = true;
+            //_context.Entry(avioSediste).State = EntityState.Modified;
+
+            foreach (var friend in flightReservation.friendForFlights)
+            {
+                AvioSediste avioSediste1 = await _context.AvioSedista
+                .Where(x => x.deleted == false)
+                .FirstOrDefaultAsync(id => id.id == friend.seatId);
+                if (avioSediste1 == null) return null;
+                if (avioSediste1.isFastReservation == true) return null;
+                if (avioSediste1.deleted == true) return null;
+                if (avioSediste1.reserved == true) return null;
+                avioSediste1.reserved = true;
+                //_context.Entry(avioSediste1).State = EntityState.Modified;
+            }
+            bool saveFailed;
+            do
+            {
+                saveFailed = false;
+                try
+                {
+                    _context.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException ex)
+                {
+                    saveFailed = true;
+                    return null;
+                }
+                catch (Exception e)
+                {
+
+                    throw;
+                }
+            } while (saveFailed);
+
+            foreach (var friendForFlight in flightReservation.friendForFlights)
+            {
+                friendForFlight.invitationString = RandomString(_context);
+                friendForFlight.reservationDate = DateTime.Now;
+            }
+
+            _context.FlightReservations.Add(flightReservation);
+
+            try
+            {
+                SendMail(flightReservation.friendForFlights as List<FriendForFlight>);
+                await _context.SaveChangesAsync();
+                //else BadRequest();
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            //await _context.SaveChangesAsync();
+
+            return flightReservation;
+        }
+
         public async Task<ActionResult<FlightReservation>> AddFlightReservation(MAANPP20ContextFlight _context, FlightReservation flightReservation)
         {
             User user = await _context.Users.Where(x => x.deleted == false)

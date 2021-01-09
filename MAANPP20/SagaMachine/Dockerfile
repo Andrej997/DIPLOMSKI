@@ -6,6 +6,8 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["SagaMachine/SagaMachine.csproj", "SagaMachine/"]
+COPY ["../RabbitMQSaga/RabbitMQSaga.csproj", "../RabbitMQSaga/"]
+COPY ["../RabbitMQMEssage/RabbitMQMEssage.csproj", "../RabbitMQMEssage/"]
 RUN dotnet restore "SagaMachine/SagaMachine.csproj"
 COPY . .
 WORKDIR "/src/SagaMachine"

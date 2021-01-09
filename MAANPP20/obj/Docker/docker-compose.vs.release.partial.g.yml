@@ -80,6 +80,23 @@ services:
       com.microsoft.visual-studio.project-name: "PaymentMicroservice"
     tty: true
 
+  sagamachine:
+    container_name: SagaMachine
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "SagaMachine"
+    volumes:
+      - C:\Users\andre\vsdbg\vs2017u5:/remote_debugger:rw
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_sagamachine$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "SagaMachine"
+    tty: true
+
   usermicroservice:
     container_name: UserMicroservice
     build:

@@ -41,3 +41,10 @@ services:
       context: .
       dockerfile: PaymentMicroservice/Dockerfile
 
+
+  sagamachine:
+    image: ${DOCKER_REGISTRY-}sagamachine
+    build:
+      context: .
+      dockerfile: SagaMachine/Dockerfile
+

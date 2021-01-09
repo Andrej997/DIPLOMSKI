@@ -10,6 +10,8 @@ using AvioMicroservice.Data;
 using AvioMicroservice.FlightRepositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
+using Common.Models.Common_U;
 
 namespace AvioMicroservice.Controllers.Flights
 {
@@ -22,6 +24,23 @@ namespace AvioMicroservice.Controllers.Flights
         public FlightReservationController(MAANPP20ContextFlight context)
         {
             _context = context;
+        }
+        [HttpGet]
+        [Route("saga")]
+        public async Task<ActionResult<FlightReservation>> SagaReservation()
+        {
+
+            return Ok();
+            //---
+            //if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            //if (ValidateModel(flightReservation, true))
+            //{
+            //    var flightReservationRet = await flightReservationRepo.SagaReservation(_context, flightReservation);
+            //    if (flightReservationRet == null) return BadRequest();
+            //    return Ok();
+            //}
+            //else return BadRequest();
         }
 
         // GET: api/FlightReservation/546tr76f

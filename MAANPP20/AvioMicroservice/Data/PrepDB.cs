@@ -18,7 +18,7 @@ namespace AvioMicroservice.Data
         {
             System.Console.WriteLine("Appling Migrations...");
 
-            context.Database.Migrate();
+            //context.Database.Migrate();
 
         }
     }

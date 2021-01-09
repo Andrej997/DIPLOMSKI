@@ -11,6 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using MassTransit;
+using CarMicroservice.Consumer;
+using RabbitMQMEssage.BusConfiguration;
 
 namespace CarMicroservice
 {
@@ -26,11 +29,21 @@ namespace CarMicroservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //var server = Configuration["DBServer"] ?? "ms-sql-server";
-            //var port = Configuration["DBPort"] ?? "1433";
-            //var user = Configuration["DBUser"] ?? "SA";
-            //var password = Configuration["DBPassword"] ?? "Password1!";
-            //var database = Configuration["Database"] ?? "maanpp20c";
+            services.AddMassTransit(cfg =>
+            {
+                cfg.AddConsumer<FlightValidateConsumer>();
+
+                cfg.AddBus(provider => RabbitMqBus.ConfigureBus(provider, (cfg, host) =>
+                {
+                }));
+            });
+            services.AddMassTransitHostedService();
+
+            var server = Configuration["DBServer"] ?? "ms-sql-server";
+            var port = Configuration["DBPort"] ?? "1433";
+            var user = Configuration["DBUser"] ?? "SA";
+            var password = Configuration["DBPassword"] ?? "Password1!";
+            var database = Configuration["Database"] ?? "maanpp20c";
 
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
 

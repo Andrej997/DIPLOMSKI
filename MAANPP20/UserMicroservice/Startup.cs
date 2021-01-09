@@ -38,9 +38,11 @@ namespace UserMicroservice
 
             services.AddControllers();
 
-            services.AddDbContext<MAANPP20ContextUser>(options =>
-                options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));
+            //services.AddDbContext<MAANPP20ContextUser>(options =>
+            //    options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password}"));
 
+            services.AddDbContext<MAANPP20ContextUser>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MAANPP20Context")));
 
             services.AddCors();
             //Jwt Authentication

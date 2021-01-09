@@ -19,7 +19,7 @@ namespace UserMicroservice.Data
         {
             System.Console.WriteLine("[UserMicroservice] Appling Migrations...");
 
-            context.Database.Migrate();
+            //context.Database.Migrate();
 
             //if (!context.Users.Any())
             //{
