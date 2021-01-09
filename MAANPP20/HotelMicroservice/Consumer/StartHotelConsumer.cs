@@ -1,18 +1,17 @@
 ﻿using MassTransit;
-using Microsoft.Extensions.Logging;
 using RabbitMQMEssage.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CarMicroservice.Consumer
+namespace HotelMicroservice.Consumer
 {
-    public class StartCarConsumer : IConsumer<IFlightStartedEvent>
+    public class StartHotelConsumer : IConsumer<ICarStartedEvent>
     {
-        public async Task Consume(ConsumeContext<IFlightStartedEvent> context)
+        public async Task Consume(ConsumeContext<ICarStartedEvent> context)
         {
-            await context.Publish<ICarStartedEvent>(new
+            await context.Publish<IHotelStartedEvent>(new
             {
                 context.Message.UserId,
                 context.Message.FlightId,

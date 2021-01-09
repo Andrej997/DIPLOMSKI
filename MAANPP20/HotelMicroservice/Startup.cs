@@ -37,6 +37,8 @@ namespace HotelMicroservice
             services.AddMassTransit(cfg =>
             {
                 cfg.AddConsumer<CarValidateConsumer>();
+                cfg.AddConsumer<HotelCancelledConsumer>();
+                cfg.AddConsumer<StartHotelConsumer>();
 
                 cfg.AddBus(provider => RabbitMqBus.ConfigureBus(provider, (cfg, host) =>
                 {

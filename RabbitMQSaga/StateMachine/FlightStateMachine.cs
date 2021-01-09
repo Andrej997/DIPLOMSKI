@@ -16,6 +16,16 @@ namespace RabbitMQSaga.StateMachine
         public Event<ICarStartedEvent> CarStartedEvent { get; private set; }
         public Event<ICarCancelEvent> CarCancelledEvent { get; private set; }
 
+        public State HotelStarted { get; private set; }
+        public State HotelCancelled { get; private set; }
+        public Event<IHotelStartedEvent> HotelStartedEvent { get; private set; }
+        public Event<IHotelCancelEvent> HotelCancelledEvent { get; private set; }
+
+        public State Completed { get; private set; }
+        public State PaymentCancelled { get; private set; }
+        public Event<IPaymentStartedEvent> PaymentStartedEvent { get; private set; }
+        public Event<IPaymentCancelEvent> PaymentCancelledEvent { get; private set; }
+
         public FlightStateMachine()
         {
             Event(() => FlightStartedEvent, x => x.CorrelateById(m => m.Message.FlightId));
@@ -23,6 +33,12 @@ namespace RabbitMQSaga.StateMachine
 
             Event(() => CarStartedEvent, x => x.CorrelateById(m => m.Message.FlightId));
             Event(() => CarCancelledEvent, x => x.CorrelateById(m => m.Message.FlightId));
+
+            Event(() => HotelStartedEvent, x => x.CorrelateById(m => m.Message.FlightId));
+            Event(() => HotelCancelledEvent, x => x.CorrelateById(m => m.Message.FlightId));
+
+            Event(() => PaymentStartedEvent, x => x.CorrelateById(m => m.Message.FlightId));
+            Event(() => PaymentCancelledEvent, x => x.CorrelateById(m => m.Message.FlightId));
 
             InstanceState(x => x.CurrentState);
 
@@ -49,7 +65,7 @@ namespace RabbitMQSaga.StateMachine
 
             During(FlightStarted,
                 When(CarStartedEvent)
-                     .TransitionTo(CarStarted)
+                    .TransitionTo(CarStarted)
                      .Publish(context => new CarValidateEvent(context.Instance)));
             
 
@@ -64,6 +80,48 @@ namespace RabbitMQSaga.StateMachine
                      .TransitionTo(FlightCancelled));
 
             // ---------------------------------------------------
+
+            During(CarStarted,
+                When(HotelStartedEvent)
+                    .TransitionTo(HotelStarted)
+                     .Publish(context => new HotelValidateEvent(context.Instance)));
+
+            During(HotelStarted,
+                When(HotelCancelledEvent)
+                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                     .TransitionTo(HotelCancelled));
+
+            During(HotelCancelled,
+                When(CarCancelledEvent)
+                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                     .TransitionTo(CarCancelled));
+
+            During(CarCancelled,
+                When(FlightCancelledEvent)
+                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                     .TransitionTo(FlightCancelled));
+
+            // ---------------------------------------------------
+
+            During(HotelStarted,
+               When(PaymentStartedEvent)
+                   .TransitionTo(Completed)
+                    .Publish(context => new PaymentValidateEvent(context.Instance)));
+
+            During(Completed,
+               When(PaymentCancelledEvent)
+               .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                   .TransitionTo(HotelCancelled));
+
+            During(HotelCancelled,
+                When(CarCancelledEvent)
+                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                     .TransitionTo(CarCancelled));
+
+            During(CarCancelled,
+                When(FlightCancelledEvent)
+                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                     .TransitionTo(FlightCancelled));
         }
     }
 }

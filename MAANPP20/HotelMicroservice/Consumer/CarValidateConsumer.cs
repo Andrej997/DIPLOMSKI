@@ -1,8 +1,5 @@
 ﻿using MassTransit;
 using RabbitMQMEssage.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace HotelMicroservice.Consumer
@@ -27,6 +24,15 @@ namespace HotelMicroservice.Consumer
             }
             else
             {
+                await context.Publish<IHotelStartedEvent>(
+                    new
+                    {
+                        context.Message.FlightId,
+                        context.Message.UserId,
+                        context.Message.CarId,
+                        context.Message.HotelId,
+                        context.Message.PaymentId
+                    });
             }
 
         }
