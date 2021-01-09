@@ -10,6 +10,15 @@ namespace CarMicroservice.Consumer
         {
             var data = context.Message;
             //_orderDataAccess.DeleteOrder(data.OrderId);
+            await context.Publish<IFlightCancelEvent>(
+                     new
+                     {
+                         context.Message.FlightId,
+                         context.Message.UserId,
+                         context.Message.CarId,
+                         context.Message.HotelId,
+                         context.Message.PaymentId
+                     });
         }
     }
 }

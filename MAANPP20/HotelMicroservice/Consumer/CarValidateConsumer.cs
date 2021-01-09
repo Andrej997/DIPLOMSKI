@@ -13,17 +13,17 @@ namespace HotelMicroservice.Consumer
         {
             var data = context.Message;
 
-            if (data.CarId == 0)
+            if (data.HotelId == 0)
             {
-                //await context.Publish<IFlightCancelEvent>(
-                //    new
-                //    {
-                //        context.Message.FlightId,
-                //        context.Message.UserId,
-                //        context.Message.CarId,
-                //        context.Message.HotelId,
-                //        context.Message.PaymentId
-                //    });
+                await context.Publish<ICarCancelEvent>(
+                    new
+                    {
+                        context.Message.FlightId,
+                        context.Message.UserId,
+                        context.Message.CarId,
+                        context.Message.HotelId,
+                        context.Message.PaymentId
+                    });
             }
             else
             {

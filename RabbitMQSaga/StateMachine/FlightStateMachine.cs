@@ -57,6 +57,13 @@ namespace RabbitMQSaga.StateMachine
                 When(CarCancelledEvent)
                     .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
                      .TransitionTo(CarCancelled));
+
+            During(CarCancelled,
+                When(FlightCancelledEvent)
+                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                     .TransitionTo(FlightCancelled));
+
+            // ---------------------------------------------------
         }
     }
 }

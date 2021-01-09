@@ -32,6 +32,8 @@ namespace CarMicroservice
             services.AddMassTransit(cfg =>
             {
                 cfg.AddConsumer<FlightValidateConsumer>();
+                cfg.AddConsumer<StartCarConsumer>();
+                cfg.AddConsumer<CarCancelledConsumer>();
 
                 cfg.AddBus(provider => RabbitMqBus.ConfigureBus(provider, (cfg, host) =>
                 {
