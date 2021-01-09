@@ -10,8 +10,8 @@ GO
 CREATE TABLE [dbo].[FlightStateData](
 	[CorrelationId] [uniqueidentifier] NOT NULL,
 	[CurrentState] [nvarchar](max) NULL,
-	[FlightCreationDateTime] [datetime] NULL,
-	[FlightCancelDateTime] [datetime] NULL,
+	[CreationDateTime] [datetime] NULL,
+	[CancelDateTime] [datetime] NULL,
 	[UserId] [nvarchar](max) NULL,
 	[FlightId] [uniqueidentifier] NULL,
 	[CarId] [int] NULL,

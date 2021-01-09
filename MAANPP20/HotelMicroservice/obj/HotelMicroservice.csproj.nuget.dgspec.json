@@ -175,7 +175,7 @@
             },
             "RabbitMQSaga": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[6.0.2, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

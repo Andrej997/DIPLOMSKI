@@ -14,7 +14,7 @@ namespace PaymentMicroservice.Consumer
             var data = context.Message;
             if (data.PaymentId == 0) // ovde ce se implementirati ako nema para
             {
-                await context.Publish<IHotelCancelEvent>(
+                await context.Publish<IPaymentCancelEvent>(
                     new
                     {
                         context.Message.FlightId,

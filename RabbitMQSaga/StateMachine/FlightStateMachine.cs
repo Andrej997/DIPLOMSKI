@@ -7,7 +7,7 @@ namespace RabbitMQSaga.StateMachine
     public class FlightStateMachine : MassTransitStateMachine<FlightStateData>
     {
         public State FlightStarted { get; private set; }
-        public State FlightCancelled { get; private set; }
+        public State Cancelled { get; private set; }
         public Event<IFlightStartedEvent> FlightStartedEvent { get; private set; }
         public Event<IFlightCancelEvent> FlightCancelledEvent { get; private set; }
 
@@ -46,20 +46,20 @@ namespace RabbitMQSaga.StateMachine
                When(FlightStartedEvent)
                 .Then(context =>
                 {
-                    context.Instance.FlightCreationDateTime = DateTime.Now;
+                    context.Instance.CreationDateTime = DateTime.Now;
                     context.Instance.FlightId = context.Data.FlightId;
+                    context.Instance.UserId = context.Data.UserId;
                     context.Instance.CarId = context.Data.CarId;
                     context.Instance.HotelId = context.Data.HotelId;
                     context.Instance.PaymentId = context.Data.PaymentId;
-                    context.Instance.UserId = context.Data.UserId;
                 })
                .TransitionTo(FlightStarted)
                .Publish(context => new FlightValidateEvent(context.Instance)));
 
             During(FlightStarted,
                 When(FlightCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
-                     .TransitionTo(FlightCancelled));
+                    .Then(context => context.Instance.CancelDateTime = DateTime.Now)
+                     .TransitionTo(Cancelled));
             
             // --------------------------------------------------
 
@@ -71,13 +71,16 @@ namespace RabbitMQSaga.StateMachine
 
             During(CarStarted,
                 When(CarCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                    .Then(context => 
+                    {
+                        context.Instance.CancelDateTime = DateTime.Now;
+                    })
                      .TransitionTo(CarCancelled));
 
             During(CarCancelled,
                 When(FlightCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
-                     .TransitionTo(FlightCancelled));
+                    .Then(context => context.Instance.CancelDateTime = DateTime.Now)
+                     .TransitionTo(Cancelled));
 
             // ---------------------------------------------------
 
@@ -88,18 +91,21 @@ namespace RabbitMQSaga.StateMachine
 
             During(HotelStarted,
                 When(HotelCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                    .Then(context =>
+                    {
+                        context.Instance.CancelDateTime = DateTime.Now;
+                    })
                      .TransitionTo(HotelCancelled));
 
             During(HotelCancelled,
                 When(CarCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+                    .Then(context => context.Instance.CancelDateTime = DateTime.Now)
                      .TransitionTo(CarCancelled));
 
-            During(CarCancelled,
-                When(FlightCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
-                     .TransitionTo(FlightCancelled));
+            //During(CarCancelled,
+            //    When(FlightCancelledEvent)
+            //        .Then(context => context.Instance.CancelDateTime = DateTime.Now)
+            //         .TransitionTo(Cancelled));
 
             // ---------------------------------------------------
 
@@ -110,18 +116,21 @@ namespace RabbitMQSaga.StateMachine
 
             During(Completed,
                When(PaymentCancelledEvent)
-               .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
+               .Then(context =>
+               {
+                   context.Instance.CancelDateTime = DateTime.Now;
+               })
                    .TransitionTo(HotelCancelled));
 
-            During(HotelCancelled,
-                When(CarCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
-                     .TransitionTo(CarCancelled));
+            //During(HotelCancelled,
+            //    When(CarCancelledEvent)
+            //        .Then(context => context.Instance.CancelDateTime = DateTime.Now)
+            //         .TransitionTo(CarCancelled));
 
-            During(CarCancelled,
-                When(FlightCancelledEvent)
-                    .Then(context => context.Instance.FlightCancelDateTime = DateTime.Now)
-                     .TransitionTo(FlightCancelled));
+            //During(CarCancelled,
+            //    When(FlightCancelledEvent)
+            //        .Then(context => context.Instance.CancelDateTime = DateTime.Now)
+            //         .TransitionTo(Cancelled));
         }
     }
 }

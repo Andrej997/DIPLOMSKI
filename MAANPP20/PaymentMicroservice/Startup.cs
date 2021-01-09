@@ -38,6 +38,7 @@ namespace PaymentMicroservice
             {
                 cfg.AddConsumer<HotelValidateConsumer>();
                 cfg.AddConsumer<StartPaymentConsumer>();
+                cfg.AddConsumer<PaymentCancelledConsumer>();
 
                 cfg.AddBus(provider => RabbitMqBus.ConfigureBus(provider, (cfg, host) =>
                 {

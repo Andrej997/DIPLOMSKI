@@ -1368,7 +1368,7 @@
           "lib/netcoreapp3.1/RabbitMQMEssage.dll": {}
         }
       },
-      "RabbitMQSaga/4.0.0": {
+      "RabbitMQSaga/6.0.2": {
         "type": "package",
         "dependencies": {
           "MassTransit": "6.2.5",
@@ -5087,14 +5087,14 @@
         "rabbitmqmessage.nuspec"
       ]
     },
-    "RabbitMQSaga/4.0.0": {
-      "sha512": "bFRRY8SoBFci9J8Z5iUCjHYHUMZkK9G/hTo3LkWrn4kXYQE4oxWuRfS0RPTu23g8RHWLiqMqlQoe3epwTnvLrg==",
+    "RabbitMQSaga/6.0.2": {
+      "sha512": "MCNEFQ2WkXIbz2wQZVw+oJj34MzXSw48BIdNqxSzHbPefP6DS+3FL5t5L5ohU96AYCh7HJhN7wg68hmJTp206g==",
       "type": "package",
-      "path": "rabbitmqsaga/4.0.0",
+      "path": "rabbitmqsaga/6.0.2",
       "files": [
         ".nupkg.metadata",
         "lib/netcoreapp3.1/RabbitMQSaga.dll",
-        "rabbitmqsaga.4.0.0.nupkg.sha512",
+        "rabbitmqsaga.6.0.2.nupkg.sha512",
         "rabbitmqsaga.nuspec"
       ]
     },
@@ -9642,7 +9642,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
       "RabbitMQMEssage >= 4.0.0",
-      "RabbitMQSaga >= 4.0.0",
+      "RabbitMQSaga >= 6.0.2",
       "System.IdentityModel.Tokens.Jwt >= 6.5.1"
     ]
   },
@@ -9739,7 +9739,7 @@
           },
           "RabbitMQSaga": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[6.0.2, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
