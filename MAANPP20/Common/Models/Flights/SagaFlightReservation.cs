@@ -11,5 +11,7 @@ namespace Common.Models.Flights
         public Guid Guid { get; set; }
 
         public int Id { get; set; }
+
+        public Guid UserId { get; set; }
     }
 }

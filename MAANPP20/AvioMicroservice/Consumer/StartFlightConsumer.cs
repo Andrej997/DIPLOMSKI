@@ -1,4 +1,5 @@
-﻿using MassTransit;
+﻿using AvioMicroservice.Data;
+using MassTransit;
 using Microsoft.Extensions.Logging;
 using RabbitMQMEssage;
 using RabbitMQMEssage.Events;
@@ -8,18 +9,18 @@ namespace AvioMicroservice.Consumer
 {
     public class StartFlightConsumer : IConsumer<IStartFlight>
     {
-        readonly ILogger<StartFlightConsumer> _logger;
+        private readonly MAANPP20ContextFlight _context;
+        public StartFlightConsumer(MAANPP20ContextFlight context)
+        {
+            _context = context;
+        }
 
         public StartFlightConsumer() { }
-        public StartFlightConsumer(ILogger<StartFlightConsumer> logger)
-        {
-            _logger = logger;
-        }
 
         public async Task Consume(ConsumeContext<IStartFlight> context)
         {
             ConsoleLogger.Log.Append("Avio", "StartFlightConsumer");
-            _logger.LogInformation("--Application Event-- Order Transation Started and event published: {FlightId}", context.Message.FlightId);
+            var data = context.Message;
 
             await context.Publish<IFlightStartedEvent>(new
             {
