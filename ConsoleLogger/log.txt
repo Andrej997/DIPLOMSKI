@@ -62,3 +62,17 @@
 [1/10/2021 6:00:28 PM] : 	microservice: Avio		 class: StartFlightConsumer
 [1/10/2021 6:00:28 PM] : 	microservice: Car		 class: StartCarConsumer
 [1/10/2021 6:00:28 PM] : 	microservice: Avio		 class: FlightCancelledConsumer
+[1/10/2021 6:42:15 PM] : 	microservice: Avio		 class: StartFlightConsumer
+[1/10/2021 6:43:43 PM] : 	microservice: Car		 class: StartCarConsumer
+[1/10/2021 6:44:11 PM] : 	microservice: Hotel		 class: StartHotelConsumer
+[1/10/2021 6:44:39 PM] : 	microservice: Payment		 class: StartPaymentConsumer
+[1/10/2021 6:44:41 PM] : 	microservice: Hotel		 class: HotelCancelledConsumer
+[1/10/2021 6:44:42 PM] : 	microservice: Car		 class: CarCancelledConsumer
+[1/10/2021 6:44:42 PM] : 	microservice: Avio		 class: FlightCancelledConsumer
+[1/10/2021 6:45:32 PM] : 	microservice: Avio		 class: StartFlightConsumer
+[1/10/2021 6:45:32 PM] : 	microservice: Car		 class: StartCarConsumer
+[1/10/2021 6:45:33 PM] : 	microservice: Hotel		 class: StartHotelConsumer
+[1/10/2021 6:45:33 PM] : 	microservice: Payment		 class: StartPaymentConsumer
+[1/10/2021 6:45:33 PM] : 	microservice: Hotel		 class: HotelCancelledConsumer
+[1/10/2021 6:45:33 PM] : 	microservice: Car		 class: CarCancelledConsumer
+[1/10/2021 6:45:34 PM] : 	microservice: Avio		 class: FlightCancelledConsumer

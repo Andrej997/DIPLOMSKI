@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AvioMicroservice.Data;
+using Common.Models.Flights;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using RabbitMQMEssage;
@@ -23,38 +24,24 @@ namespace AvioMicroservice.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Test()
-        {
-            return Ok();
-        }
-
         [HttpPost]
-        [Route("test")]
-        public async Task<IActionResult> CreateFlightUsingStateMachineInDb(int id)
+        [Route("reserve")]
+        public async Task<IActionResult> CreateFlightUsingStateMachineInDb(SagaFlightReservation reservation)
         {
             var endpoint = await _sendEndpointProvider.GetSendEndpoint(new Uri("queue:" + BusConstants.StartOrderTranastionQueue));
 
-            var reservationGuid = Guid.NewGuid();
-
-            _context.SagaFlightReservations.Add(new Common.Models.Flights.SagaFlightReservation
-            {
-                Guid = reservationGuid,
-                UserId = Guid.Parse("108C6CD3-DFBC-45D6-A5C0-D42DCCFFA4DD"),
-                Id = id
-            });
-
+            _context.SagaFlightReservations.Add(reservation);
             _context.SaveChanges();
 
             await endpoint.Send<IStartFlight>(new
             {
-                UserId = "108C6CD3-DFBC-45D6-A5C0-D42DCCFFA4DD",
-                FlightId = reservationGuid.ToString(),
+                UserId = reservation.UserId,
+                FlightId = reservation.Guid,
                 CarId = 0,
                 HotelId = 0,
                 PaymentId = 0,
-                price = 68.1,
-                grad = "Belgrade"
+                price = reservation.Cena,
+                grad = reservation.Grad
             });
 
             return Ok("Success");

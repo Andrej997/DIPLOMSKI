@@ -22,12 +22,6 @@ namespace AvioMicroservice.Consumer
                 .Where(x => x.Guid == data.FlightId)
                 .FirstOrDefault();
 
-            //var flightReservations = _context.FlightReservations
-            //    .Where(x => x.id == sagaFlightReservations.Id)
-            //    .FirstOrDefault();
-
-            //_context.FlightReservations.Remove(flightReservations);
-
             _context.SagaFlightReservations.Remove(sagaFlightReservations);
 
             _context.SaveChanges();
