@@ -15,5 +15,6 @@ namespace RabbitMQSaga.StateMachine
         public int HotelId { get; set; }
         public int PaymentId { get; set; }
         public double price { get; set; }
+        public string grad { get; set; }
     }
 }

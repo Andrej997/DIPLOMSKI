@@ -15,5 +15,7 @@ namespace RabbitMQMEssage.Events
         public int PaymentId { get; }
 
         public double price { get; }
+
+        public string grad { get; }
     }
 }

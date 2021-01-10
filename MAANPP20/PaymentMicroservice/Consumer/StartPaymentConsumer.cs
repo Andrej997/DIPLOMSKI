@@ -23,7 +23,8 @@ namespace PaymentMicroservice.Consumer
                         context.Message.CarId,
                         context.Message.HotelId,
                         context.Message.PaymentId,
-                        context.Message.price
+                        context.Message.price,
+                        context.Message.grad
                     });
             }
             else // Completed
@@ -34,7 +35,8 @@ namespace PaymentMicroservice.Consumer
                     context.Message.CarId,
                     context.Message.HotelId,
                     context.Message.PaymentId,
-                    context.Message.price
+                    context.Message.price,
+                    context.Message.grad
                 });
         }
     }

@@ -38,7 +38,8 @@ namespace AvioMicroservice.Controllers
                 CarId = num,
                 HotelId = 1,
                 PaymentId = 1,
-                price = 28.3
+                price = 28.3,
+                grad = "Belgrade"
             });
 
             return Ok("Success");

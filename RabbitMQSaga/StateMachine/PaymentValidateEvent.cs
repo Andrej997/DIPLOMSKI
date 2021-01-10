@@ -19,5 +19,6 @@ namespace RabbitMQSaga.StateMachine
         public int HotelId => flightSagaState.HotelId;
         public int PaymentId => flightSagaState.PaymentId;
         public double price => flightSagaState.price;
+        public string grad => flightSagaState.grad;
     }
 }

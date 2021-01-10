@@ -24,7 +24,8 @@ namespace HotelMicroservice.Consumer
                        context.Message.CarId,
                        context.Message.HotelId,
                        context.Message.PaymentId,
-                       context.Message.price
+                       context.Message.price,
+                       context.Message.grad
                    });
             }
             else
@@ -36,7 +37,8 @@ namespace HotelMicroservice.Consumer
                     context.Message.CarId,
                     context.Message.HotelId,
                     context.Message.PaymentId,
-                    context.Message.price
+                    context.Message.price,
+                    context.Message.grad
                 });
             }
         }

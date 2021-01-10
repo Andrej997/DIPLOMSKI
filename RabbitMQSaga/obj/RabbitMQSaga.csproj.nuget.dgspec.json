@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\RabbitMQMEssage\\RabbitMQMEssage.csproj": {
-      "version": "7.0.0",
+      "version": "8.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\RabbitMQMEssage\\RabbitMQMEssage.csproj",
         "projectName": "RabbitMQMEssage",
@@ -77,7 +77,7 @@
       }
     },
     "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\RabbitMQSaga\\RabbitMQSaga.csproj": {
-      "version": "7.0.9",
+      "version": "8.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\RabbitMQSaga\\RabbitMQSaga.csproj",
         "projectName": "RabbitMQSaga",

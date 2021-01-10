@@ -53,6 +53,7 @@ namespace RabbitMQSaga.StateMachine
                     context.Instance.HotelId = context.Data.HotelId;
                     context.Instance.PaymentId = context.Data.PaymentId;
                     context.Instance.price = context.Data.price;
+                    context.Instance.grad = context.Data.grad;
                 })
                .TransitionTo(FlightStarted));
 

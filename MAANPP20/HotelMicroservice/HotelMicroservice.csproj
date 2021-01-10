@@ -21,8 +21,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
-    <PackageReference Include="RabbitMQMEssage" Version="7.0.0" />
-    <PackageReference Include="RabbitMQSaga" Version="7.0.9" />
+    <PackageReference Include="RabbitMQMEssage" Version="8.0.0" />
+    <PackageReference Include="RabbitMQSaga" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -157,11 +157,11 @@
             },
             "RabbitMQMEssage": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.0, )"
             },
             "RabbitMQSaga": {
               "target": "Package",
-              "version": "[7.0.8, )"
+              "version": "[8.0.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
