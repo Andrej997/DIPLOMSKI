@@ -25,7 +25,7 @@ namespace AvioMicroservice.Controllers
 
         [HttpPost]
         [Route("test")]
-        public async Task<IActionResult> CreateFlightUsingStateMachineInDb()
+        public async Task<IActionResult> CreateFlightUsingStateMachineInDb(int num)
         {
             var endpoint = await _sendEndpointProvider.GetSendEndpoint(new Uri("queue:" + BusConstants.StartOrderTranastionQueue));
 
@@ -35,9 +35,10 @@ namespace AvioMicroservice.Controllers
             {
                 UserId = Guid.NewGuid().ToString(),
                 FlightId = Guid.NewGuid().ToString(),
-                CarId = 1,
+                CarId = num,
                 HotelId = 1,
-                PaymentId = 0
+                PaymentId = 1,
+                price = 28.3
             });
 
             return Ok("Success");

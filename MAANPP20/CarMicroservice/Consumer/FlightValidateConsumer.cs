@@ -11,9 +11,10 @@ namespace CarMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<IFlightValidateEvent> context)
         {
+            ConsoleLogger.Log.Append("Car", "FlightValidateConsumer");
             var data = context.Message;
 
-            if (data.CarId == 0)
+            if (data.CarId == 1)
             {
                 await context.Publish<IFlightCancelEvent>(
                     new
@@ -22,7 +23,8 @@ namespace CarMicroservice.Consumer
                         context.Message.UserId,
                         context.Message.CarId,
                         context.Message.HotelId,
-                        context.Message.PaymentId
+                        context.Message.PaymentId,
+                        context.Message.price
                     });
             }
             else
@@ -34,7 +36,8 @@ namespace CarMicroservice.Consumer
                         context.Message.UserId,
                         context.Message.CarId,
                         context.Message.HotelId,
-                        context.Message.PaymentId
+                        context.Message.PaymentId,
+                        context.Message.price
                     });
             }
 

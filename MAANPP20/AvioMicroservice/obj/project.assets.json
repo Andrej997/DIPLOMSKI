@@ -1354,7 +1354,7 @@
           "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
       },
-      "RabbitMQMEssage/4.0.0": {
+      "RabbitMQMEssage/7.0.0": {
         "type": "package",
         "dependencies": {
           "MassTransit": "6.2.5",
@@ -1368,12 +1368,12 @@
           "lib/netcoreapp3.1/RabbitMQMEssage.dll": {}
         }
       },
-      "RabbitMQSaga/6.0.2": {
+      "RabbitMQSaga/7.0.8": {
         "type": "package",
         "dependencies": {
           "MassTransit": "6.2.5",
           "MassTransit.EntityFrameworkCore": "6.2.5",
-          "RabbitMQMEssage": "4.0.0"
+          "RabbitMQMEssage": "7.0.0"
         },
         "compile": {
           "lib/netcoreapp3.1/RabbitMQSaga.dll": {}
@@ -3113,6 +3113,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ConsoleLogger/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ConsoleLogger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsoleLogger.dll": {}
+        }
       }
     }
   },
@@ -5076,25 +5086,25 @@
         "rabbitmq.client.nuspec"
       ]
     },
-    "RabbitMQMEssage/4.0.0": {
-      "sha512": "avJHbsNwUzuqhkRKv5g9Yk5eDrZ2OUquZ3ePPK0MG+goFTI5emy64sw9O3HLLMabF3SOwnmbhQf2B9uKK2seKg==",
+    "RabbitMQMEssage/7.0.0": {
+      "sha512": "zvBTlJ9IZTIVMti4AELOytqnYQlf1kFvREkkipxMl/dCSd4N2/sHyu+TO5szgNHQoHWA7yrv6qUYbhTV32dEcw==",
       "type": "package",
-      "path": "rabbitmqmessage/4.0.0",
+      "path": "rabbitmqmessage/7.0.0",
       "files": [
         ".nupkg.metadata",
         "lib/netcoreapp3.1/RabbitMQMEssage.dll",
-        "rabbitmqmessage.4.0.0.nupkg.sha512",
+        "rabbitmqmessage.7.0.0.nupkg.sha512",
         "rabbitmqmessage.nuspec"
       ]
     },
-    "RabbitMQSaga/6.0.2": {
-      "sha512": "MCNEFQ2WkXIbz2wQZVw+oJj34MzXSw48BIdNqxSzHbPefP6DS+3FL5t5L5ohU96AYCh7HJhN7wg68hmJTp206g==",
+    "RabbitMQSaga/7.0.8": {
+      "sha512": "LVR9R+K0mKng3C0OKl9ggruF2+9XOAPjkO5JmlQO2OXEWFFHocH/Rsw6yWs4Yr/zS2Y5nwCJuUCu+fdHxtKE5A==",
       "type": "package",
-      "path": "rabbitmqsaga/6.0.2",
+      "path": "rabbitmqsaga/7.0.8",
       "files": [
         ".nupkg.metadata",
         "lib/netcoreapp3.1/RabbitMQSaga.dll",
-        "rabbitmqsaga.6.0.2.nupkg.sha512",
+        "rabbitmqsaga.7.0.8.nupkg.sha512",
         "rabbitmqsaga.nuspec"
       ]
     },
@@ -9627,11 +9637,17 @@
       "type": "project",
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
+    },
+    "ConsoleLogger/1.0.0": {
+      "type": "project",
+      "path": "../../ConsoleLogger/ConsoleLogger.csproj",
+      "msbuildProject": "../../ConsoleLogger/ConsoleLogger.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Common >= 1.0.0",
+      "ConsoleLogger >= 1.0.0",
       "GoogleMaps.LocationServices >= 1.2.0.5",
       "MassTransit.AspNetCore >= 6.2.5",
       "MassTransit.RabbitMQ >= 6.2.5",
@@ -9643,8 +9659,8 @@
       "Microsoft.IdentityModel.Tokens >= 6.5.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
-      "RabbitMQMEssage >= 4.0.0",
-      "RabbitMQSaga >= 6.0.2",
+      "RabbitMQMEssage >= 7.0.0",
+      "RabbitMQSaga >= 7.0.8",
       "System.IdentityModel.Tokens.Jwt >= 6.5.1"
     ]
   },
@@ -9682,6 +9698,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\ConsoleLogger\\ConsoleLogger.csproj": {
+              "projectPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\ConsoleLogger\\ConsoleLogger.csproj"
+            },
             "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\MAANPP20\\Common\\Common.csproj": {
               "projectPath": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\MAANPP20\\Common\\Common.csproj"
             }
@@ -9745,11 +9764,11 @@
           },
           "RabbitMQMEssage": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[7.0.0, )"
           },
           "RabbitMQSaga": {
             "target": "Package",
-            "version": "[6.0.2, )"
+            "version": "[7.0.8, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",

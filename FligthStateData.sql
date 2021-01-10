@@ -17,6 +17,7 @@ CREATE TABLE [dbo].[FlightStateData](
 	[CarId] [int] NULL,
 	[HotelId] [int] NULL,
 	[PaymentId] [int] NULL,
+	[price] [float] NULL,
  CONSTRAINT [PK_FlightStateData] PRIMARY KEY CLUSTERED 
 (
 	[CorrelationId] ASC

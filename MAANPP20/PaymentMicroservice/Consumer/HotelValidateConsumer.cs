@@ -8,6 +8,7 @@ namespace PaymentMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<IHotelValidateEvent> context)
         {
+            ConsoleLogger.Log.Append("Payment", "HotelValidateConsumer");
             var data = context.Message;
 
             if (data.PaymentId == 0) // ovde ce se implementirati ako nema para
@@ -19,7 +20,8 @@ namespace PaymentMicroservice.Consumer
                         context.Message.UserId,
                         context.Message.CarId,
                         context.Message.HotelId,
-                        context.Message.PaymentId
+                        context.Message.PaymentId,
+                        context.Message.price
                     });
             }
 

@@ -5925,7 +5925,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "4.0.0",
+    "version": "7.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\andre\\Desktop\\DIPLOMSKI\\RabbitMQMEssage\\RabbitMQMEssage.csproj",
       "projectName": "RabbitMQMEssage",

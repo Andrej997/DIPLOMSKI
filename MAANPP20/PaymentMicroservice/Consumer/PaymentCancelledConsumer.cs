@@ -11,6 +11,7 @@ namespace PaymentMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<IPaymentCancelEvent> context)
         {
+            ConsoleLogger.Log.Append("Payment", "PaymentCancelledConsumer");
             var data = context.Message;
             //_orderDataAccess.DeleteOrder(data.OrderId);
             await context.Publish<IHotelCancelEvent>(
@@ -20,7 +21,8 @@ namespace PaymentMicroservice.Consumer
                          context.Message.UserId,
                          context.Message.CarId,
                          context.Message.HotelId,
-                         context.Message.PaymentId
+                         context.Message.PaymentId,
+                         context.Message.price
                      });
         }
     }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AvioMicroservice.Migrations
 {
-    public partial class InitialAvio : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -67,6 +67,18 @@ namespace AvioMicroservice.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Presedanja", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SagaFlightReservations",
+                columns: table => new
+                {
+                    Guid = table.Column<Guid>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SagaFlightReservations", x => x.Guid);
                 });
 
             migrationBuilder.CreateTable(
@@ -630,6 +642,9 @@ namespace AvioMicroservice.Migrations
 
             migrationBuilder.DropTable(
                 name: "RezervacijaOdDo");
+
+            migrationBuilder.DropTable(
+                name: "SagaFlightReservations");
 
             migrationBuilder.DropTable(
                 name: "StringForICollections");

@@ -8,6 +8,7 @@ namespace AvioMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<IFlightCancelEvent> context)
         {
+            ConsoleLogger.Log.Append("Avio", "FlightCancelledConsumer");
             var data = context.Message;
             //_orderDataAccess.DeleteOrder(data.OrderId);
         }

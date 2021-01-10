@@ -11,14 +11,34 @@ namespace HotelMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<ICarStartedEvent> context)
         {
-            await context.Publish<IHotelStartedEvent>(new
+            ConsoleLogger.Log.Append("Hotel", "StartHotelConsumer");
+            var data = context.Message;
+
+            if (data.CarId == 2)
             {
-                context.Message.UserId,
-                context.Message.FlightId,
-                context.Message.CarId,
-                context.Message.HotelId,
-                context.Message.PaymentId
-            });
+                await context.Publish<ICarCancelEvent>(
+                   new
+                   {
+                       context.Message.FlightId,
+                       context.Message.UserId,
+                       context.Message.CarId,
+                       context.Message.HotelId,
+                       context.Message.PaymentId,
+                       context.Message.price
+                   });
+            }
+            else
+            {
+                await context.Publish<IHotelStartedEvent>(new
+                {
+                    context.Message.UserId,
+                    context.Message.FlightId,
+                    context.Message.CarId,
+                    context.Message.HotelId,
+                    context.Message.PaymentId,
+                    context.Message.price
+                });
+            }
         }
     }
 }

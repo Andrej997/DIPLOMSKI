@@ -8,9 +8,10 @@ namespace HotelMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<ICarValidateEvent> context)
         {
+            ConsoleLogger.Log.Append("Hotel", "CarValidateConsumer");
             var data = context.Message;
 
-            if (data.HotelId == 0)
+            if (data.CarId == 2)
             {
                 await context.Publish<ICarCancelEvent>(
                     new
@@ -19,7 +20,8 @@ namespace HotelMicroservice.Consumer
                         context.Message.UserId,
                         context.Message.CarId,
                         context.Message.HotelId,
-                        context.Message.PaymentId
+                        context.Message.PaymentId,
+                        context.Message.price
                     });
             }
             else
@@ -31,7 +33,8 @@ namespace HotelMicroservice.Consumer
                         context.Message.UserId,
                         context.Message.CarId,
                         context.Message.HotelId,
-                        context.Message.PaymentId
+                        context.Message.PaymentId,
+                        context.Message.price
                     });
             }
 

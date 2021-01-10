@@ -12,14 +12,35 @@ namespace CarMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<IFlightStartedEvent> context)
         {
-            await context.Publish<ICarStartedEvent>(new
+            ConsoleLogger.Log.Append("Car", "StartCarConsumer");
+            var data = context.Message;
+
+            if (data.CarId == 1)
             {
-                context.Message.UserId,
-                context.Message.FlightId,
-                context.Message.CarId,
-                context.Message.HotelId,
-                context.Message.PaymentId
-            });
+                await context.Publish<IFlightCancelEvent>(
+                   new
+                   {
+                       context.Message.FlightId,
+                       context.Message.UserId,
+                       context.Message.CarId,
+                       context.Message.HotelId,
+                       context.Message.PaymentId,
+                       context.Message.price
+                   });
+            }
+            else
+            {
+                await context.Publish<ICarStartedEvent>(new
+                {
+                    context.Message.UserId,
+                    context.Message.FlightId,
+                    context.Message.CarId,
+                    context.Message.HotelId,
+                    context.Message.PaymentId,
+                    context.Message.price
+                });
+            }
+                
         }
     }
 }

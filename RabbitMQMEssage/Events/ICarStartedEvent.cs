@@ -13,5 +13,7 @@ namespace RabbitMQMEssage.Events
         public int HotelId { get; set; }
 
         public int PaymentId { get; set; }
+
+        public double price { get; set; }
     }
 }

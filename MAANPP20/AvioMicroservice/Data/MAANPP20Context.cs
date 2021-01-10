@@ -12,6 +12,8 @@ namespace AvioMicroservice.Data
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<SagaFlightReservation> SagaFlightReservations { get; set; }
+
         #region Common
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Friend> Friends { get; set; }

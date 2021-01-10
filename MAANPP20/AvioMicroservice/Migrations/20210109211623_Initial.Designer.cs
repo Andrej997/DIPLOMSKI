@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AvioMicroservice.Migrations
 {
     [DbContext(typeof(MAANPP20ContextFlight))]
-    [Migration("20201206001908_InitialAvio")]
-    partial class InitialAvio
+    [Migration("20210109211623_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -682,6 +682,20 @@ namespace AvioMicroservice.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Presedanja");
+                });
+
+            modelBuilder.Entity("Common.Models.Flights.SagaFlightReservation", b =>
+                {
+                    b.Property<Guid>("Guid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Guid");
+
+                    b.ToTable("SagaFlightReservations");
                 });
 
             modelBuilder.Entity("Common.Models.Cars.RezervacijaOdDo", b =>

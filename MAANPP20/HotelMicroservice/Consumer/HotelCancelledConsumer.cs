@@ -11,6 +11,7 @@ namespace HotelMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<IHotelCancelEvent> context)
         {
+            ConsoleLogger.Log.Append("Hotel", "HotelCancelledConsumer");
             var data = context.Message;
             //_orderDataAccess.DeleteOrder(data.OrderId);
             await context.Publish<ICarCancelEvent>(
@@ -20,7 +21,8 @@ namespace HotelMicroservice.Consumer
                          context.Message.UserId,
                          context.Message.CarId,
                          context.Message.HotelId,
-                         context.Message.PaymentId
+                         context.Message.PaymentId,
+                         context.Message.price
                      });
         }
     }

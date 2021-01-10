@@ -18,6 +18,7 @@ namespace AvioMicroservice.Consumer
 
         public async Task Consume(ConsumeContext<IStartFlight> context)
         {
+            ConsoleLogger.Log.Append("Avio", "StartFlightConsumer");
             _logger.LogInformation("--Application Event-- Order Transation Started and event published: {FlightId}", context.Message.FlightId);
 
             await context.Publish<IFlightStartedEvent>(new
@@ -26,7 +27,8 @@ namespace AvioMicroservice.Consumer
                 context.Message.FlightId,
                 context.Message.CarId,
                 context.Message.HotelId,
-                context.Message.PaymentId
+                context.Message.PaymentId,
+                context.Message.price
             });
         }
     }

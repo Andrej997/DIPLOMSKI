@@ -8,19 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20201205234339_InitialAvio.cs" />
-    <Compile Remove="Migrations\20201205234339_InitialAvio.Designer.cs" />
-    <Compile Remove="Migrations\20201206000504_InitialAvio1.cs" />
-    <Compile Remove="Migrations\20201206000504_InitialAvio1.Designer.cs" />
-    <Compile Remove="Migrations\20201206000903_InitialAvio.cs" />
-    <Compile Remove="Migrations\20201206000903_InitialAvio.Designer.cs" />
-    <Compile Remove="Migrations\20201206001359_InitialAvio.cs" />
-    <Compile Remove="Migrations\20201206001359_InitialAvio.Designer.cs" />
-    <Compile Remove="Migrations\20201206001722_InitialAvio1.cs" />
-    <Compile Remove="Migrations\20201206001722_InitialAvio1.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MassTransit.AspNetCore" Version="6.2.5" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="6.2.5" />
     <PackageReference Include="GoogleMaps.LocationServices" Version="1.2.0.5" />
@@ -35,12 +22,13 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.5.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
-    <PackageReference Include="RabbitMQMEssage" Version="4.0.0" />
-    <PackageReference Include="RabbitMQSaga" Version="6.0.2" />
+    <PackageReference Include="RabbitMQMEssage" Version="7.0.0" />
+    <PackageReference Include="RabbitMQSaga" Version="7.0.9" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ConsoleLogger\ConsoleLogger.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
   </ItemGroup>
 

@@ -682,6 +682,20 @@ namespace AvioMicroservice.Migrations
                     b.ToTable("Presedanja");
                 });
 
+            modelBuilder.Entity("Common.Models.Flights.SagaFlightReservation", b =>
+                {
+                    b.Property<Guid>("Guid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Guid");
+
+                    b.ToTable("SagaFlightReservations");
+                });
+
             modelBuilder.Entity("Common.Models.Cars.RezervacijaOdDo", b =>
                 {
                     b.HasOne("Common.Models.Common_U.User", null)

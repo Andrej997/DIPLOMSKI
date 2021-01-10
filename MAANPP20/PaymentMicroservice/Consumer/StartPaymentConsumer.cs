@@ -11,28 +11,31 @@ namespace PaymentMicroservice.Consumer
     {
         public async Task Consume(ConsumeContext<IHotelStartedEvent> context)
         {
+            ConsoleLogger.Log.Append("Payment", "StartPaymentConsumer");
             var data = context.Message;
-            if (data.PaymentId == 0) // ovde ce se implementirati ako nema para
+            if (data.CarId == 3) // ovde ce se implementirati ako nema para
             {
-                await context.Publish<IPaymentCancelEvent>(
+                await context.Publish<IHotelCancelEvent>(
                     new
                     {
                         context.Message.FlightId,
                         context.Message.UserId,
                         context.Message.CarId,
                         context.Message.HotelId,
-                        context.Message.PaymentId
+                        context.Message.PaymentId,
+                        context.Message.price
                     });
             }
-            else 
-            await context.Publish<IPaymentStartedEvent>(new
-            {
-                context.Message.UserId,
-                context.Message.FlightId,
-                context.Message.CarId,
-                context.Message.HotelId,
-                context.Message.PaymentId
-            });
+            else // Completed
+                await context.Publish<IPaymentStartedEvent>(new
+                {
+                    context.Message.UserId,
+                    context.Message.FlightId,
+                    context.Message.CarId,
+                    context.Message.HotelId,
+                    context.Message.PaymentId,
+                    context.Message.price
+                });
         }
     }
 }
