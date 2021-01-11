@@ -50,4 +50,5 @@ Nakon sto su dodati entiteti u tabelama, sad se moze testirati saga pozivom sled
   }
   
 Prikaz svih pojedinacnih tabela se nalazi u listingu *AllSagaTables.sql*.
+
 Napomena: za potrene testiranja sage, nije neophodan rad UserMicroservisa.
