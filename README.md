@@ -1,7 +1,7 @@
-# DIPLOMSKI
-Migracija monolitnog sistema na distribuiranu mikroservisnu arhitekturu uz upotrebu SAGA sablona
+# **DIPLOMSKI**
+**Migracija monolitnog sistema na distribuiranu mikroservisnu arhitekturu uz upotrebu SAGA sablona**
 
-Zadatak: Izvršti pregled literature, identifikovati moguće podele postojećih servisa na mikroservise koristeći metode dostupne u literaturi. Implementirati podelu. Upotrebiti Saga šablon na mestima gde je potrebna distribuirana transakcija.
+***Zadatak: Izvršti pregled literature, identifikovati moguće podele postojećih servisa na mikroservise koristeći metode dostupne u literaturi. Implementirati podelu. Upotrebiti Saga šablon na mestima gde je potrebna distribuirana transakcija.***
 
 Pre pokretanja aplikacije, neophodno je instalirati softvere sa sledecih linkova https://www.erlang.org/ https://www.rabbitmq.com/
 
@@ -16,3 +16,5 @@ Solution aplikacije se nalazi u folderu MAANPP20, neohodno je pokrenuti solution
   4. HotelMicroservice : Start without debbuing
   5. PaymentMicroservice : Start without debbuing
   6. UserMicroservice : Start without debbuing
+  
+Nakon uspesnog pokretanja solution-a, prvo kreirati bar po jedan entitet za svaku tabelu saga ucesnika, 
