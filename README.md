@@ -7,7 +7,7 @@ Pre pokretanja aplikacije, neophodno je instalirati softvere sa sledecih linkova
 
 Nakon instalacije, proveriti da li je pokrenut RabbitMQ servis, inicijalni kredencijali su guest/guest -> http://localhost:15672/#/
 
-Neohodno je rucko kreirati bazu za pracenje saga stanja, query za kreirenje tabele se nalazi u root-u repositorijuma FligthStateData.sql
+Neohodno je rucno kreirati bazu za pracenje saga stanja, query za kreirenje tabele se nalazi u root-u repositorijuma FligthStateData.sql, zatim promenuti connection string u svakom appsettings.json fajlu od svakog pojedinacnog mikroserivisa i kod SagaMachine projekta u Program.cs-u.
 
 Solution aplikacije se nalazi u folderu MAANPP20, neohodno je pokrenuti solution u Multiple startup projects modu, redosled aplikacija je sledeci:
   1. SagaMachine : Start
