@@ -9,11 +9,8 @@ namespace Common.Models.Payments
     {
         [Key]
         public int id { get; set; }
-
         public Guid UserId { get; set; }
-
         public double? Avaible { get; set; }
-
         public DateTime? Updated { get; set; }
     }
 }

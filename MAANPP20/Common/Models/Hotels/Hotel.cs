@@ -9,11 +9,8 @@ namespace Common.Models.Hotels
     {
         [Key]
         public int id { get; set; }
-
         public string Grad { get; set; }
-
         public int? Avaible { get; set; }
-
         public DateTime? Updated { get; set; }
     }
 }
