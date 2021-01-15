@@ -1,9 +1,0 @@
-C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\UF-messages.deps.json
-C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\UF-messages.dll
-C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\UF-messages.pdb
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-messages\obj\Debug\netcoreapp3.1\UF-messages.csprojAssemblyReference.cache
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-messages\obj\Debug\netcoreapp3.1\UF-messages.csproj.CoreCompileInputs.cache
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-messages\obj\Debug\netcoreapp3.1\UF-messages.AssemblyInfoInputs.cache
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-messages\obj\Debug\netcoreapp3.1\UF-messages.AssemblyInfo.cs
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-messages\obj\Debug\netcoreapp3.1\UF-messages.dll
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-messages\obj\Debug\netcoreapp3.1\UF-messages.pdb

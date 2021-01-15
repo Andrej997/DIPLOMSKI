@@ -1,9 +1,0 @@
-C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\UF-bus.deps.json
-C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\UF-bus.dll
-C:\Users\andre\Desktop\DIPLOMSKI\Diplomski_NuGets\netcoreapp3.1\UF-bus.pdb
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-bus\obj\Debug\netcoreapp3.1\UF-bus.csprojAssemblyReference.cache
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-bus\obj\Debug\netcoreapp3.1\UF-bus.csproj.CoreCompileInputs.cache
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-bus\obj\Debug\netcoreapp3.1\UF-bus.AssemblyInfoInputs.cache
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-bus\obj\Debug\netcoreapp3.1\UF-bus.AssemblyInfo.cs
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-bus\obj\Debug\netcoreapp3.1\UF-bus.dll
-C:\Users\andre\Desktop\DIPLOMSKI\UF-dipl\UF-bus\obj\Debug\netcoreapp3.1\UF-bus.pdb
